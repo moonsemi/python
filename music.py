@@ -15,7 +15,6 @@ musics = soup.select('.music-list-wrap > .list-wrap > tbody > .list')
 rank = 1
 for music in musics:
     # music 안에 a 가 있으면,
-    for(i = 0, )
     title = music.select_one('td.info > a.title').text.strip()
     artist = music.select_one('td.info > a.artist ').text.strip()
     print(rank, title, artist)
